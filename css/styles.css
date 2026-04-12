@@ -1,8 +1,36 @@
-h1 {
-    color:brown;
-    font-size: 32px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+html {
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(78, 128, 78);
+    color: rgb(73, 5, 8);
 }
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #caebb7;
+    padding: 0 10px 20px 20px;
+    border: 5px solid black;
+}
+h1 {
+    text-shadow: 3px 2px 0px rgb(120, 121, 114);
+    font-size: 52px;
+    padding: 20px 0;
+    margin: 0;
+    text-align: center;
+}
+
+ul,
 p {
-        color: rgb(73, 5, 8);
-    }
+    font-size: 16px;
+}
+
+#event-description {
+    text-align:center;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 500px; height: 300px;
+}

@@ -3,44 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HiCoffee</title>
+    <title>HiCoffee!</title>
+
     <!-- CSS -->
     <link rel = "stylesheet" href = "css/styles.css">
+
     <!-- Fonte -->
     <link
     href="http://fonts.googleapis.com/css?family=Open+Sans"
     rel="stylesheet" />
+
     <!-- Icones -->
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
 </head>
 <body>
-    <h1>
-        HiCoffee!
-        <link rel = "stylesheet" href = "styles.css">
-    </h1>
-    <img src="css/img/cafeteria.avif" alt = "deu ruim fml"/>
-    <header id="event-description">
-        Need a boost of energy? HiCoffee! <i class="bi bi-balloon-heart"></i>
-        <div id="disclaimer">
-            <h2> Meet your new hub!</h2>
-            <p class="about-event">
-                Warm your heart in our bean to cup experience!
-            </p>
+    <!-- header com contato/links e afins -->
+    <header>
+        <div class = "headbar">
+            <div class = "logo"> HiCoffee! ☕</div>
+            <ul class = "nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#hub">Hub</a></li>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+            <a href="https://instagram.com/luisaava" class="btn-nav">Follow Us</a>
         </div>
     </header>
 
-    <p> Explore our menu!</p>
-    <p>
-        <ul>
-            <li> Coffee</li>
-            <li> Lunch</li>
-            <li> Home-made sweets</li>
-            <li> And much more!</li>
-        </ul>
-    </p>
-    <p>
-        Find more about us <a href = "https://maps.app.goo.gl/9X7bBYinQNFkHs1j7">here</a>!
-    </p>
+    <!-- to catch the eye of the customer -->
+    <section id="home">
+        <h1>HiCoffee!</h1>
+        <img src="css/img/cafeteria.avif" alt = "deu ruim fml"/>
+        <h2>Need a boost of energy? Hi, Coffee!</h2>
+
+    </section>
+
+    <!-- show a bit of the place and how its presented -->
+    <section id="hub">
+        <h2> Meet your new hub!</h2>
+        <p>Warm your heart in our bean to cup experience!</p>
+    </section>
+
+    <!-- summary of our menu -->
+    <section id="menu">
+        <h3> Explore our menu!</h3>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="css/img/cafe.webp">
+                <h3> Artisanal Latte</h3>
+                <p>Silky steamed milk poured over our signature espresso.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer that displays the location or alike? -->
+    <footer>
+        <div class="footer-content">
+        <p>📍 Av. Madre Benvenuta, Florianópolis - SC</p>
+        <p> Mon - Fri: 08:00 - 18:00</p>
+        <p>© 2026 HiCoffee!</p>
+        </div>
+    </footer>
+    
 </body>
 </html>

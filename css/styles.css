@@ -10,6 +10,7 @@ html {
     font-family: "Open Sans", sans-serif;
     background-color: rgb(78, 128, 78);
     color: #4b3621;
+
 }
 
 body {
@@ -17,6 +18,7 @@ body {
     padding: 0;
     line-height: 1.6;
     scroll-behavior:smooth;
+    justify-content: center;
 }
 
 header {
@@ -24,7 +26,7 @@ header {
     position: sticky;
     padding: 1rem 5%;
     width: 100%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
 }
 
 .headbar {
@@ -35,13 +37,13 @@ header {
     max-width: 1400px;         
     margin: 0 auto;
 }
-
+/* logo do site sei la */
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color:  #fdfbf7;
 }
-
+/* links para diferentes seções da pagina? */
 .nav-links {
     display: flex;
     list-style: none;
@@ -53,7 +55,7 @@ header {
     color: #fdfbf7;
     font-weight: 500;
 }
-
+/* redireciona para meu instagram :) */
 .btn-nav {
     background-color: #6b8e23; 
     color:  #fcfbf9;
@@ -62,36 +64,96 @@ header {
     text-decoration: none;
     font-size: 0.9rem;
 }
-h1 {
+/* estilizaçao da section home */
+
+.home {
+    display:flex;
+    align-items:center;
+    box-shadow: 5px 10px 5px #caebb7;
+    height: 480px;
+    
+}
+.home h1 {
     text-shadow: 3px 2px 0px rgb(120, 121, 114);
     font-size: 52px;
     padding: 20px 0;
     margin: 10px;
     text-align: center;
 }
-h2 {
+
+.home-content {
+    text-align: center;
+}
+
+.home h2 {
     font-size: 27px;
     padding: 20px 0;
     margin: 10px;
     text-align: center;
 }
     
-ul,
 p {
     font-size: 16px;
     margin: 10px;
 }
 
-#event-description {
-    text-align:center;
-    font-size: 16px;
+.home-img img {
+    display: flex;
+    margin: auto;
+    height:500px;
+    width: 900px;
+    /* border:0px; */
 }
 
-img {
+/* section para falar um pouco do lugar(hub) */
+.hub {
+    background-color: #fdfbf7;
+}
+.hub-img img {
+    display: flex;
+    margin: auto;
+    height:500px;
+    width: 900px;
+    align-items: center;
+}
+
+.hub h2 {
+    font-size: 27px;
+    padding: 20px 0;
+    margin: 10px;
+    text-align: center;
+}
+/* section para uma prévia do menu */
+
+.menu {
+    padding-top: 10px;
+    padding-bottom:150px;
+    text-align: center;
+}
+
+.menu_grid {
+    justify-content: center;
+    display:flex;
+    gap:20px;
+    padding:50px;
+}
+
+.menu-item {
+    text-align: center;
     display: block;
     margin: auto;
     width: 500px; height: 300px;
     
+}
+.menu-img img{
+    width: 300px; height: 300px;
+    object-fit: cover;
+
+}
+ 
+h2 {
+    position:relative;
+    text-align:center;
 }
 
 /* footer pra informaçoes adicionais */

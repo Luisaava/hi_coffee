@@ -10,19 +10,20 @@ html {
     font-family: "Open Sans", sans-serif;
     background-color: rgb(78, 128, 78);
     color: #4b3621;
-
+    scroll-behavior:smooth;
 }
 
 body {
     background-color: #caebb7;
     line-height: 1.6;
-    scroll-behavior:smooth;
     justify-content: center;
 }
 
 header {
     background-color: #4b3621;
     position: sticky;
+    top:0;
+    z-index: 1000;
     padding: 1rem 5%;
     width: 100%;
     box-shadow: 0 10px 10px rgba(0,0,0,0.1);
@@ -70,8 +71,8 @@ header {
     align-items:center;
     box-shadow: 5px 10px 5px #caebb7;
     height: 500px;
-    
 }
+
 .home h1 {
     text-shadow: 3px 2px 0px rgb(120, 121, 114);
     font-size: 52px;
@@ -107,7 +108,7 @@ p {
 /* section para falar um pouco do lugar(hub) */
 .hub {
     background-color: #fdfbf7;
-    box-shadow: 5px 10px 30px #f3c4ac9a;
+    box-shadow: 5px 10px 30px #886b5d80;
     padding-top: 50px;
 }
 .hub-imagery {
@@ -132,6 +133,8 @@ p {
     margin: 10px;
     text-align: center;
 }
+
+
 /* section para uma prévia do menu */
 
 .menu {
@@ -147,7 +150,7 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap:100px;
+    gap:80px;
     margin: 10px auto;
     max-width: 1200px;
 }
@@ -158,8 +161,14 @@ p {
     align-self: center;
     max-width: 350px;
     border-radius:10px;
+    transition: transform 0.4s ease;
 }
-.menu-img img{
+
+.menu-item:hover {
+    transform: translateY(-10px);
+}
+
+.menu-img img {
     height: 350px;
     width: 350px;
     object-fit: cover;
@@ -171,9 +180,11 @@ h2 {
     position:relative;
     text-align:center;
 }
+
 /* section para falar um pouco da história do café */
+
 .about-us {
-    background-color: #fdfbf7;
+    background-color: #4b3621;
     box-shadow: #fcfbf9;
     padding-bottom: 00px;
     padding-top: 0px;
@@ -183,6 +194,8 @@ h2 {
 .history {
     display:flex;
     padding-left: 0px;
+    padding: 30px;
+    /* box-shadow: 10px 5px 20px #7acf85; */
 }
 
 .history-text {
@@ -190,13 +203,16 @@ h2 {
 }
 
 .history-text h2 {
+    color: white;
     text-align: start;
+    font-style:italic;
     font-size: 40px;
     margin-left:50px;
     padding-left: 100px;
 }
 
 .history-text p {
+    color: white;
     text-align: justify;
     line-height: 1.8;
     max-width: 600px;
@@ -214,6 +230,80 @@ h2 {
     height:500px;
     width: 900px;
     margin:auto;
+}
+
+/* grid para status do coffee */
+
+.experience {
+    padding-top: 10px;
+    padding-bottom:10px;
+    text-align: center;
+}
+
+.exp {
+    padding-top: 10px;
+    padding-bottom:50px;
+    text-align: center;
+}
+
+.exp-top {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.exp-top h1 {
+    font-style:italic;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.exp-top p {
+    padding-bottom: 50px;
+    font-weight: 400;
+    max-width: 800px;
+    font-size:25px;
+    margin: 0 auto;
+    text-align:center;
+}
+
+.exp-grid {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    margin: 10px auto;
+    max-width: 1200px;
+    flex: 1 1 200px;
+}
+
+.stat-item img {
+    
+    text-align: center;
+    align-self: center;
+    max-width: 350px;
+    border-radius:10px;
+    transition: transform 0.4s ease;
+}
+
+.stat-item img:hover {
+    transform: translateY(-0.5in);
+}
+
+.stat-img img {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    display:block;
+    width:100%;
+}
+
+.stat-label {
+    font-style:bold;
+    font-size:20px;
 }
 
 /* footer pra informaçoes adicionais */

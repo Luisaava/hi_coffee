@@ -7,7 +7,7 @@
 html {
     box-sizing: border-box;
     font-size: 15px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Quicksand", sans-serif;
     background-color: rgb(78, 128, 78);
     color: #4b3621;
     scroll-behavior:smooth;
@@ -33,7 +33,6 @@ header {
     display:flex;
     justify-content: space-between;
     align-items:center;
-           
     max-width: 1400px;         
     margin: 0 auto;
 }
@@ -47,12 +46,13 @@ header {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 20px;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #fdfbf7;
+    text-decoration:none;
+    font-size: 18px;
+    color: #f7fdf7;
     font-weight: 500;
 }
 /* redireciona para meu instagram :) */
@@ -62,7 +62,7 @@ header {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 18px;
 }
 /* estilizaçao da section home */
 
@@ -71,12 +71,18 @@ header {
     align-items:center;
     box-shadow: 5px 10px 5px #caebb7;
     height: 500px;
+    background-image: linear-gradient(rgba(202, 235, 183, 0.8), rgba(202, 235, 183, 0.8)),
+                        url("https://static.vecteezy.com/system/resources/thumbnails/037/747/925/small/ai-generated-falling-coffee-beans-free-png.png");
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-blend-mode:darken;
 }
 
 .home h1 {
-    text-shadow: 3px 2px 0px rgb(120, 121, 114);
+    /* text-shadow: 3px 1px 0px rgb(120, 121, 114); */
+    display: table;
     font-size: 52px;
-    padding: 20px 0;
+    padding: 10px 10px; background-color: #fdfbf7;
     margin: 10px;
     text-align: center;
 }
@@ -274,35 +280,38 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap:30px;
+    gap:50px;
     margin: 10px auto;
     max-width: 1200px;
     flex: 1 1 200px;
 }
 
 .stat-item img {
-    
     text-align: center;
     align-self: center;
-    max-width: 350px;
-    border-radius:10px;
+    max-width: 250px;
+    border-radius:0px;
     transition: transform 0.4s ease;
 }
 
 .stat-item img:hover {
-    transform: translateY(-0.5in);
+    transform: translateY(-0.2in);
+    transform: scale(1.1);
 }
 
 .stat-img img {
-    height: 350px;
-    width: 350px;
-    object-fit: cover;
-    display:block;
-    width:100%;
+    height: 300px;
+    max-width: 250px;
+    object-fit: scale-down;
+    display: flex;
 }
 
-.stat-label {
-    font-style:bold;
+.exp-grid .stat-item:nth-child(3) .stat-img img {
+    width: 200px;    
+}
+
+.stat-item .stat-label {
+    font-style:oblique;
     font-size:20px;
 }
 

@@ -11,6 +11,7 @@ html {
     background-color: rgb(78, 128, 78);
     color: #4b3621;
     scroll-behavior:smooth;
+    overflow-x:hidden
 
 }
 
@@ -75,9 +76,10 @@ header {
     scroll-margin-top: 230px;
     background-image: linear-gradient(rgba(202, 235, 183, 0.8), rgba(202, 235, 183, 0.8)),
                         url("https://static.vecteezy.com/system/resources/thumbnails/037/747/925/small/ai-generated-falling-coffee-beans-free-png.png");
-    background-size: contain;
+    background-size:contain;
     background-repeat:no-repeat;
     background-blend-mode:darken;
+    
 }
 
 .home h1 {
@@ -118,6 +120,7 @@ p {
     background-color: #fdfbf7;
     box-shadow: 5px 10px 30px #886b5d80;
     padding-top: 50px;
+    
 }
 .hub-imagery {
     display: flex;
@@ -132,6 +135,7 @@ p {
     margin: auto;
     height:500px;
     width: 1000px;
+    position: relative;
     align-items: center;
 }
 
@@ -205,11 +209,14 @@ h2 {
     display:flex;
     padding-left: 0px;
     padding: 30px;
+    position: relative;
     /* box-shadow: 10px 5px 20px #7acf85; */
 }
 
 .history-text {
     align-items: start;
+    position:relative;
+    z-index: 2;
 }
 
 .history-text h2 {
@@ -228,11 +235,27 @@ h2 {
     max-width: 600px;
     font-size: 23px;
     margin-left:150px;
+    mix-blend-mode:exclusion;
 }
 
 .history-img {
     height: 500px;
 
+}
+.splash {
+    position:absolute;
+    right:-100px;
+    top: 300px;
+}
+.splash img {
+    width: 700px;
+    height:auto;
+    object-fit:scale-down;
+    opacity: 1;
+    display:flex;
+    transform: rotate(-30deg);
+    -webkit-mask-image: linear-gradient(to top rgba(0,0,0,1), 60%, rgba(0,0,0,0));
+    mask-image: linear-gradient(to top, rgba(0,0,0,1) 30%, rgba(0,0,0,0));
 }
 .history-img img {
     display:flex;
@@ -284,17 +307,33 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap:50px;
+    gap:70px;
     margin: 10px auto;
-    max-width: 1200px;
+    max-width: 100%;
     flex: 1 1 200px;
 }
 
+.stat-item {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.stat-img {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 10px;
+    flex:1;
+}
 .stat-item img {
+    height: 300px;
+    max-height: 100%;
     text-align: center;
     align-self: center;
     max-width: 250px;
-    border-radius:0px;
+    object-fit: scale-down;
+    display: flex;
     transition: transform 0.4s ease;
 }
 
@@ -303,36 +342,82 @@ h2 {
     transform: scale(1.1);
 }
 
-.stat-img img {
-    height: 300px;
-    max-width: 250px;
-    object-fit: scale-down;
-    display: flex;
-}
 
 .exp-grid .stat-item:nth-child(3) .stat-img img {
     width: 200px;    
 }
 
 .stat-item .stat-label {
-    font-style:oblique;
+    font-style:italic;
     font-size:20px;
+    width: 100%;
     
 }
 
 /* footer pra informaçoes adicionais */
+
 footer {
     background-color: #4b3621;
-    color:  #fdfbf7;
-    padding: 2rem;
+    color: #fdfbf7;
+    padding: 3rem 5%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    flex-wrap: flex; 
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.lang, .footer-location, .footer-contact {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-location {
     text-align: center;
 }
 
-.footer-content p {
-    margin-bottom: 1rem;
-    opacity: 0.8;
+.footer-contact {
+    text-align: right; 
 }
 
-.footer a {
-    background-color: #6b8e23;
+.footer-redes {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.btn-social {
+    text-decoration: none;
+    color: #fcfbf9;
+    font-size: 28px;
+    transition: color 0.3s ease;
+}
+
+.btn-social:hover {
+    color: #6b8e23;
+}
+
+.btn-translate {
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.footer-copyright {
+    border-top: 1px solid rgba(253, 251, 247, 0.1);
+    margin-top: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-copyright p {
+    font-size: 14px;
+    opacity: 0.7;
 }

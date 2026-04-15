@@ -274,36 +274,36 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap:30px;
+    gap:50px;
     margin: 10px auto;
     max-width: 1200px;
     flex: 1 1 200px;
 }
 
 .stat-item img {
-    
     text-align: center;
     align-self: center;
-    max-width: 350px;
-    border-radius:10px;
+    max-width: 250px;
+    border-radius:0px;
     transition: transform 0.4s ease;
 }
 
 .stat-item img:hover {
-    transform: translateY(-0.5in);
+    transform: translateY(-0.2in);
+    transform:scale(1.1);
 }
 
 .stat-img img {
-    height: 350px;
-    width: 350px;
-    object-fit: cover;
-    display:block;
-    width:100%;
+    height: 300px;
+    width: 300px;
+    object-fit: scale-down;
+    display: flex;
 }
 
-.stat-label {
+.stat-item .stat-label {
     font-style:bold;
     font-size:20px;
+    
 }
 
 /* footer pra informaçoes adicionais */

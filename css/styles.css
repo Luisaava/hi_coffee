@@ -79,7 +79,7 @@ header {
 }
 
 .home h1 {
-    /* text-shadow: 3px 2px 0px rgb(120, 121, 114); */
+    /* text-shadow: 3px 1px 0px rgb(120, 121, 114); */
     display: table;
     font-size: 52px;
     padding: 10px 10px; background-color: #fdfbf7;
@@ -296,18 +296,22 @@ h2 {
 
 .stat-item img:hover {
     transform: translateY(-0.2in);
-    transform:scale(1.1);
+    transform: scale(1.1);
 }
 
 .stat-img img {
     height: 300px;
-    width: 300px;
+    max-width: 250px;
     object-fit: scale-down;
     display: flex;
 }
 
+.exp-grid .stat-item:nth-child(3) .stat-img img {
+    width: 200px;    
+}
+
 .stat-item .stat-label {
-    font-style:bold;
+    font-style:oblique;
     font-size:20px;
     
 }

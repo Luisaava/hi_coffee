@@ -332,3 +332,7 @@ footer {
     margin-bottom: 1rem;
     opacity: 0.8;
 }
+
+.footer a {
+    background-color: #6b8e23;
+}

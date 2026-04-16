@@ -56,6 +56,11 @@ header {
     font-size: 18px;
     color: #f7fdf7;
     font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color:#6b8e23;
 }
 /* redireciona para o futuro shop! */
 .btn-nav {
@@ -65,6 +70,7 @@ header {
     border-radius: 5px;
     text-decoration: none;
     font-size: 18px;
+    transition: 0.3s;
 }
 .btn-nav:hover {
     color:#4b3621;
@@ -134,7 +140,7 @@ p {
     top:30rem    
 }
 .hub .splashy img {
-    width: 1800px;
+    width: 1900px;
     height:auto;
     display:flex;
     mix-blend-mode:darken;

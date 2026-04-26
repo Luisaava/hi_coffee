@@ -1,0 +1,49 @@
+header {
+    background-color: #4b3621;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    padding: 1rem 5%;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+
+.headbar {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    max-width: 1400px;         
+    margin: 0 auto;
+}
+/* logo do site sei la */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:  #fdfbf7;
+}
+/* links para diferentes seções da pagina? */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration:none;
+    font-size: 18px;
+    color: #f7fdf7;
+    font-weight: 500;
+}
+/* redireciona para o futuro shop! */
+.btn-nav {
+    background-color: #6b8e23; 
+    color:  #fcfbf9;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.btn-nav:hover {
+    color:#4b3621;
+    background-color:#f7fdf7;
+}

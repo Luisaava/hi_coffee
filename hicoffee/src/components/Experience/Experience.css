@@ -1,0 +1,85 @@
+.experience {
+    padding-top: 30px;
+    padding-bottom:30px;
+    text-align: center;
+}
+
+.exp {
+    padding-top: 10px;
+    padding-bottom:50px;
+    text-align: center;
+}
+
+.exp-top {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.exp-top h1 {
+    font-style:italic;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.exp-top p {
+    padding-bottom: 50px;
+    font-weight: 400;
+    max-width: 800px;
+    font-size:25px;
+    margin: 0 auto;
+    text-align:center;
+}
+
+.exp-grid {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:70px;
+    margin: 10px auto;
+    max-width: 100%;
+    flex: 1 1 200px;
+}
+
+.stat-item {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.stat-img {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 10px;
+    flex:1;
+}
+.stat-item img {
+    height: 300px;
+    max-height: 100%;
+    text-align: center;
+    align-self: center;
+    object-fit: scale-down;
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.stat-item img:hover {
+    transform: translateY(-0.2in);
+    transform: scale(1.1);
+}
+
+
+.exp-grid .stat-item:nth-child(3) .stat-img img {
+    width: 200px;    
+}
+
+.stat-item .stat-label {
+    font-style:italic;
+    font-size:20px;
+    width: 100%;
+    
+}

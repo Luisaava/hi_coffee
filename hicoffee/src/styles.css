@@ -21,7 +21,7 @@ body {
     justify-content: center;
 }
 
-header {
+.header {
     background-color: #4b3621;
     position: sticky;
     top:0;
@@ -388,7 +388,7 @@ h2 {
 
 /* footer pra informaçoes adicionais */
 
-footer {
+.footer {
     background-color: #4b3621;
     color: #fdfbf7;
     padding: 3rem 5%;

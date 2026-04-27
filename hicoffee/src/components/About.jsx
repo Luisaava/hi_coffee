@@ -1,6 +1,6 @@
-import './About.css';
-import splash_2 from '../../assets/small_splash.png'
-import brewer from '../../assets/img/brewer.jpg'
+// import './About.css';
+import splash_2 from '../assets/small_splash.png'
+import brewer from '../assets/img/brewer.jpg'
 
 export function About() {
 

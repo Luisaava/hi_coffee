@@ -1,7 +1,7 @@
-import './Experience.css';
-import cafezinho from '../../assets/img/exp1.png'
-import grao from '../../assets/img/exp2.png'
-import estrela from '../../assets/img/exp3.svg'
+// import './Experience.css';
+import cafezinho from '../assets/img/exp1.png'
+import grao from '../assets/img/exp2.png'
+import estrela from '../assets/img/exp3.svg'
 
 export function Experience() {
 

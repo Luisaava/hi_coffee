@@ -1,11 +1,11 @@
-import './Menu.css';
-import cafe from '../../assets/img/item_1.webp';
-import salgado from '../../assets/img/item_2.jpg'
-import doces from '../../assets/img/item_3.jpg'
+// import './Menu.css';
+import cafe from './assets/img/item_1.webp';
+import salgado from './assets/img/item_2.jpg'
+import doces from './assets/img/item_3.jpg'
 
 export function Menu() {
     return (
-<section id="menu" className="menu">
+    <section id="menu" className="menu">
         <div className="menu-grid">
             
             <div className="menu-item">

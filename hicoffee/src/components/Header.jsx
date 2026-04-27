@@ -1,7 +1,7 @@
-import './Header.css'
+// import './Header.css'
 export function Header() {
     return (
-            <header>
+    <section id="header" className="header">
         <div className = "headbar">
             <div className = "logo"> HiCoffee! ☕</div>
             <ul className = "nav-links">
@@ -12,6 +12,6 @@ export function Header() {
             </ul>
             <a href="https://instagram.com/luisaava" className="btn-nav">Shop Now!</a>
         </div>
-    </header>
+    </section>
     );
 }

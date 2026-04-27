@@ -7,7 +7,7 @@
     <title>HiCoffee!☕</title>
 
     <!-- CSS -->
-    <link rel = "stylesheet" href = "css/styles.css">
+    <link rel = "stylesheet" href = "styles.css">
 
     <!-- Fonte -->
     <link
@@ -23,57 +23,57 @@
 </head>
 <body>
     <!-- header com contato/links e afins -->
-    <header>
-        <div className = "headbar">
-            <div className = "logo"> HiCoffee! ☕</div>
-            <ul className = "nav-links">
+    <section id="header" class="header">
+        <div class = "headbar">
+            <div class = "logo"> HiCoffee! ☕</div>
+            <ul class = "nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#about-us">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="https://instagram.com/luisaava" className="btn-nav">Shop Now!</a>
+            <a href="https://instagram.com/luisaava" class="btn-nav">Shop Now!</a>
         </div>
-    </header>
+    </section>
 
     <!-- to catch the eye of the customer -->
-    <section id="home" className = "home">
-        <div className = "home-content">
+    <section id="home" class = "home">
+        <div class = "home-content">
             <h1>Made to coffee lovers, by coffee addicts</h1>
             <h2>Need a boost of energy? <bold>Hi, Coffee!</bold></h2>
         </div>
-        <div className = "home-img">
+        <div class = "home-img">
             <img src="css/img/cafeteria.avif" alt = "deu ruim fml"/>
         </div>
     </section>
 
     <!-- show a bit of the place and how its presented -->
-    <section className = "hub">
-        <div className="splashy"> <img src="https://cdn.shopify.com/s/files/1/0694/3814/4675/files/Coffee_Splash.png?v=1741797780"></div>
-        <div className="hub-imagery">
+    <section id="hub" class = "hub">
+        <div class="splashy"> <img src="https://cdn.shopify.com/s/files/1/0694/3814/4675/files/Coffee_Splash.png?v=1741797780"></div>
+        <div class="hub-imagery">
             <img src="https://images.stockcake.com/public/8/6/d/86d4659b-fb86-4bf5-abd2-ec6b7ed145f2_large/cozy-coffee-shop-stockcake.jpg"/>
         </div>
-        <div className="hub-text">
+        <div class="hub-text">
         <h2>Warm your heart in our bean to cup experience!</h2>
         </div>
     </section>
 
     <!-- summary of the menu -->
-    <section id="menu" className="menu">
-        <div className="menu-grid">
+    <section id="menu" class="menu">
+        <div class="menu-grid">
             
-            <div className="menu-item">
-                <div className="menu-img"> <img src="css/img/cafe.webp"/> </div>
+            <div class="menu-item">
+                <div class="menu-img"> <img src="css/img/cafe.webp"/> </div>
                 <h3> Artisanal Latte</h3>
                 <p>Artisanal coffees crafted with technical precision and rich flavor</p>
             </div>
-            <div className="menu-item">
-                <div className="menu-img"> <img src="https://images.pexels.com/photos/1510685/pexels-photo-1510685.jpeg?cs=srgb&dl=pexels-valeriya-1510685.jpg&fm=jpg"/> </div>
+            <div class="menu-item">
+                <div class="menu-img"> <img src="https://images.pexels.com/photos/1510685/pexels-photo-1510685.jpeg?cs=srgb&dl=pexels-valeriya-1510685.jpg&fm=jpg"/> </div>
                 <h3> Daily Pastries</h3>
                 <p>Fresh, flaky, and golden-brown. The perfect companion for your morning boost</p>
             </div>
-            <div className="menu-item">
-                <div className="menu-img"> <img src="https://img.freepik.com/premium-photo/various-sweets-desserts-coffee-shop-display-close-up_759575-6302.jpg"/> </div>
+            <div class="menu-item">
+                <div class="menu-img"> <img src="https://img.freepik.com/premium-photo/various-sweets-desserts-coffee-shop-display-close-up_759575-6302.jpg"/> </div>
                 <h3>Sweet Indulgence</h3>
                 <p>A curated selection of desserts designed to sweeten your routine and warm your heart!</p>
             </div>
@@ -81,12 +81,12 @@
     </section>
     
     <!-- section with the history of the place -->
-    <section id="about-us" className="about-us">
-        <div className="history">
-            <div className="splash"> <img src="https://static.vecteezy.com/system/resources/thumbnails/047/921/019/small_2x/coffee-splash-with-beans-isolated-on-a-transparent-background-free-png.png"></div>
-            <div className="history-img"> <img src="https://i0.wp.com/1zpresso.coffee/wp-content/uploads/2024/05/coffee-brewing.jpg?fit=1024%2C578&ssl=1"/>
+    <section id="about-us" class="about-us">
+        <div class="history">
+            <div class="splash"> <img src="https://static.vecteezy.com/system/resources/thumbnails/047/921/019/small_2x/coffee-splash-with-beans-isolated-on-a-transparent-background-free-png.png"></div>
+            <div class="history-img"> <img src="https://i0.wp.com/1zpresso.coffee/wp-content/uploads/2024/05/coffee-brewing.jpg?fit=1024%2C578&ssl=1"/>
             </div>
-            <div className="history-text">
+            <div class="history-text">
                 <h2> More than coffee...</h2>
                 <p>We don't just "make" coffee; we solve for it. To us, every roast profile is a variable,
                 and every extraction is a calculated move toward the perfect result.
@@ -97,54 +97,54 @@
         </div>
     </section>
     <!-- section that shows some of stats of the coffee shop! -->
-    <section className="experience">
-    <div className="exp">
-        <div className="exp-top">
+    <section id="experience" class="experience">
+    <div class="exp">
+        <div class="exp-top">
             <h1>And the results speak for itself</h1>
             <p>Founded in 2018, our coffee shop has been a place where friends meet, <strong>ideas grow</strong>, and memories are made. We believe coffee is not just a drink — it's an experience.</p>
         </div>
 
-        <div className="exp-grid">
-            <div className="stat-item">
-                <span className="stat-img"> <img src = "https://static.vecteezy.com/system/resources/thumbnails/023/438/448/small/espresso-coffee-cutout-free-png.png"/> 
+        <div class="exp-grid">
+            <div class="stat-item">
+                <span class="stat-img"> <img src = "https://static.vecteezy.com/system/resources/thumbnails/023/438/448/small/espresso-coffee-cutout-free-png.png"/> 
                 </span>
-                <span className="stat-label"><strong>50K+</strong> Cups Served</span>
+                <span class="stat-label"><strong>50K+</strong> Cups Served</span>
             </div>
-            <div className="stat-item">
-                <span className="stat-img"> <img src = "https://www.pngall.com/wp-content/uploads/2016/04/Coffee-Beans-Free-PNG-Image.png"/> 
+            <div class="stat-item">
+                <span class="stat-img"> <img src = "https://www.pngall.com/wp-content/uploads/2016/04/Coffee-Beans-Free-PNG-Image.png"/> 
                 </span>
-                <span className="stat-label"><strong>10+</strong> Coffee Origins</span>
+                <span class="stat-label"><strong>10+</strong> Coffee Origins</span>
             </div>
-            <div className="stat-item">
-                <span className="stat-img"> <img src = "https://upload.wikimedia.org/wikipedia/commons/1/1f/Green_star_41-108-41.svg"/> 
+            <div class="stat-item">
+                <span class="stat-img"> <img src = "https://upload.wikimedia.org/wikipedia/commons/1/1f/Green_star_41-108-41.svg"/> 
                 </span>
-                <span className="stat-label"> <strong>4.9</strong> Average Rating</span>
+                <span class="stat-label"> <strong>4.9</strong> Average Rating</span>
             </div>
         </div>
     </div>
     </section>
 
     <!-- footer that displays the location or alike? -->
-    <footer id="contact">
-    <div className="footer-content">
-        <div className="lang">
+    <section id="footer" class="footer">
+    <div class="footer-content">
+        <div class="lang">
             <h3>Languages</h3>
-            <a href="index_pt.html" className="btn-translate"><span className="fi fi-br"></span></a>
-            <a href="index.html" className="btn-translate"><span className="fi fi-us"></span></a>
+            <a href="index_pt.html" class="btn-translate"><span class="fi fi-br"></span></a>
+            <a href="index.html" class="btn-translate"><span class="fi fi-us"></span></a>
         </div>
 
-        <div className="footer-location">
+        <div class="footer-location">
             <p>📍 Av. Madre Benvenuta, Florianópolis - SC</p>
             <p>Mon - Fri: 08:00 - 18:00</p>
         </div>
 
-        <div className="footer-contact">
-            <div className="footer-redes">
-                <a href="https://www.instagram.com/luisaava" className="btn-social">
-                    <i className="bi bi-instagram"></i>
+        <div class="footer-contact">
+            <div class="footer-redes">
+                <a href="https://www.instagram.com/luisaava" class="btn-social">
+                    <i class="bi bi-instagram"></i>
                 </a>
-                <a href="https://www.facebook.com/?locale=pt_BR" className="btn-social">
-                    <i className="bi bi-facebook"></i>
+                <a href="https://www.facebook.com/?locale=pt_BR" class="btn-social">
+                    <i class="bi bi-facebook"></i>
                 </a>
             </div>
             <p>+1 (999) 9999-77-66</p>
@@ -152,11 +152,10 @@
         </div>
     </div>
 
-    <div className="footer-copyright">
+    <div class="footer-copyright">
         <p>© 2026 HiCoffee!</p>
     </div>
-</footer>
-</section>
+    </section>
     
 </body>
 </html>

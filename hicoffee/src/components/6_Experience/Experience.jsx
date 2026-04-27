@@ -1,4 +1,7 @@
-import './Footer.css';
+import './Experience.css';
+import cafezinho from '../../assets/img/exp1.png'
+import grao from '../../assets/img/exp2.png'
+import estrela from '../../assets/img/exp3.svg'
 
 export function Experience() {
 
@@ -12,17 +15,17 @@ return (
 
             <div className="exp-grid">
                 <div className="stat-item">
-                    <span className="stat-img"> <img src = "https://static.vecteezy.com/system/resources/thumbnails/023/438/448/small/espresso-coffee-cutout-free-png.png"/> 
+                    <span className="stat-img"> <img src = {cafezinho}/> 
                     </span>
                     <span className="stat-label"><strong>50K+</strong> Cups Served</span>
                 </div>
                 <div className="stat-item">
-                    <span className="stat-img"> <img src = "https://www.pngall.com/wp-content/uploads/2016/04/Coffee-Beans-Free-PNG-Image.png"/> 
+                    <span className="stat-img"> <img src = {grao}/> 
                     </span>
                     <span className="stat-label"><strong>10+</strong> Coffee Origins</span>
                 </div>
                 <div className="stat-item">
-                    <span className="stat-img"> <img src = "https://upload.wikimedia.org/wikipedia/commons/1/1f/Green_star_41-108-41.svg"/> 
+                    <span className="stat-img"> <img src = {estrela}/> 
                     </span>
                     <span className="stat-label"> <strong>4.9</strong> Average Rating</span>
                 </div>

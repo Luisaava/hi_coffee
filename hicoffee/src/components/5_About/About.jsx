@@ -1,12 +1,14 @@
 import './About.css';
+import splash_2 from '../../assets/small_splash.png'
+import brewer from '../../assets/img/brewer.jpg'
 
 export function About() {
 
 return (
     <section id="about-us" className="about-us">
             <div className="history">
-                <div className="splash"> <img src="https://static.vecteezy.com/system/resources/thumbnails/047/921/019/small_2x/coffee-splash-with-beans-isolated-on-a-transparent-background-free-png.png"/> </div>
-                <div className="history-img"> <img src="https://i0.wp.com/1zpresso.coffee/wp-content/uploads/2024/05/coffee-brewing.jpg?fit=1024%2C578&ssl=1"/>
+                <div className="splash"> <img src={splash_2}/> </div>
+                <div className="history-img"> <img src={brewer}/>
                 </div>
                 <div className="history-text">
                     <h2> More than coffee...</h2>

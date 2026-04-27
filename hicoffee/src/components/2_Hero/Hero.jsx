@@ -1,5 +1,5 @@
 import './Hero.css';
-import barista from '../../assets/img/cafeteria.avif';
+import barista from '../../assets/img/barista.avif';
 
 export function Hero() {
   return (

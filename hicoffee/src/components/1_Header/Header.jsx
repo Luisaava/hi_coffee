@@ -1,7 +1,6 @@
 import './Header.css'
 export function Header() {
     return (
-        <header>
             <header>
         <div className = "headbar">
             <div className = "logo"> HiCoffee! ☕</div>
@@ -14,6 +13,5 @@ export function Header() {
             <a href="https://instagram.com/luisaava" className="btn-nav">Shop Now!</a>
         </div>
     </header>
-        </header>
     );
 }

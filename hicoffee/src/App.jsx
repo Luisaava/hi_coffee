@@ -1,8 +1,10 @@
-import { Header } from './components/Header/Header';
-import { Hero } from './components/Hero/Hero';
-import { Menu } from './components/Menu/Menu';
-import { Experience } from './components/Experience/Experience';
-import { Footer } from './components/Footer/Footer';
+import { Header } from './components/1_Header/Header';
+import { Hero } from './components/2_Hero/Hero';
+import { Hub } from './components/3_Hub/Hub';
+import { Menu } from './components/4_Menu/Menu';
+import { About } from './components/5_About/About';
+import { Experience } from './components/6_Experience/Experience';
+import { Footer } from './components/7_Footer/Footer';
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <Hub />
         <Menu />
+        <About />
         <Experience />
       </main>
       <Footer />

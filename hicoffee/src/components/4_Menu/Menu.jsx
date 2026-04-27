@@ -1,11 +1,12 @@
-
+import './Menu.css';
+import cafe from '../../assets/img/cafeteria.avif';
 export function Menu() {
     return (
 <section id="menu" className="menu">
         <div className="menu-grid">
             
             <div className="menu-item">
-                <div className="menu-img"> <img src="css/img/cafe.webp"/> </div>
+                <div className="menu-img"> <img src={cafe}/> </div>
                 <h3> Artisanal Latte</h3>
                 <p>Artisanal coffees crafted with technical precision and rich flavor</p>
             </div>

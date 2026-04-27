@@ -1,6 +1,6 @@
-import './Experience.css';
+import './About.css';
 
-export function Experience() {
+export function About() {
 
 return (
     <section id="about-us" className="about-us">

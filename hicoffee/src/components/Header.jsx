@@ -1,5 +1,6 @@
 // import './Header.css'
-export function Header() {
+
+export default function Header() {
     return (
     <section id="header" className="header">
         <div className = "headbar">
@@ -8,9 +9,9 @@ export function Header() {
                 <li><a href="#home">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#about-us">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#footer">Contact</a></li>
             </ul>
-            <a href="https://instagram.com/luisaava" className="btn-nav">Shop Now!</a>
+            <a href="#shop" className="btn-nav">Shop Now!</a>
         </div>
     </section>
     );

@@ -1,9 +1,9 @@
 // import './Hub.css';
-import cafeteria from './assets/img/cafeteria.jpg';
-import splash_1 from './assets/img/big_splash.png';
+import cafeteria from '../assets/img/cafeteria.jpg';
+import splash_1 from '../assets/img/big_splash.png';
 
 
-export function Hub() {
+export default function Hub() {
     return (
     <section className = "hub">
             <div className="splashy"> <img src={splash_1}/></div>

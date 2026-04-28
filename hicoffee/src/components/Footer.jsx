@@ -1,6 +1,6 @@
 // import './Footer.css';
 
-export function Header() {
+export default function Header() {
     return (
     <section id="footer" className="footer">
         <div className="footer-content">

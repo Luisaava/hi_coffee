@@ -1,8 +1,8 @@
 // import './About.css';
-import splash_2 from '../assets/small_splash.png'
+import splash_2 from '../assets/img/small_splash.png'
 import brewer from '../assets/img/brewer.jpg'
 
-export function About() {
+export default function About() {
 
 return (
     <section id="about-us" className="about-us">

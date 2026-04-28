@@ -1,7 +1,7 @@
 // import './Hero.css';
-import barista from './assets/img/barista.avif';
+import barista from '../assets/img/barista.avif';
 
-export function Hero() {
+export default function Hero() {
   return (
     <section id="home" className="home">
       <div className="home-content">

@@ -10,8 +10,11 @@ export default function Header() {
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#about-us">About</a></li>
                 <li><a href="#footer">Contact</a></li>
+                <a href="#shop" className="btn-nav">Shop Now!</a>
             </ul>
-            <a href="#shop" className="btn-nav">Shop Now!</a>
+            <a href="#cart" className="cart">
+                <i className="bi bi-cart2"></i>
+            </a>
         </div>
     </section>
     );

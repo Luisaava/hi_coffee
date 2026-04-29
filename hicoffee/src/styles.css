@@ -5,7 +5,7 @@
     --verde_musgo: rgb(78, 128, 78);
     --verde_matcha: #caebb7;
     --marrom: #4b3621;
-    --branco_leve: #fdfbf7;
+    --branco_leve: #F1E9D7;
     --verde_musgo: rgb(78, 128, 78);
 }
 
@@ -13,7 +13,7 @@ html {
     box-sizing: border-box;
     font-size: 15px;
     font-family: "Quicksand", sans-serif;
-    background-color: var(--verde_musgo);
+    background-color: var(--marrom);
     color: var(--marrom);
     scroll-behavior:smooth;
     overflow-x:hidden;
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    background-color: var(--verde_matcha);
+    background-color: var(--marrom);
     line-height: 1.6;
     justify-content: center;
 }
@@ -71,7 +71,7 @@ body {
 .btn-nav {
     background-color: #6b8e23; 
     color:  #fcfbf9;
-    padding: 0.5rem 1rem;
+    padding: 0.1rem 1rem;
     border-radius: 5px;
     text-decoration: none;
     font-size: 18px;
@@ -81,16 +81,29 @@ body {
     color:#4b3621;
     background-color:#f7fdf7;
 }
+.cart {
+    background-color: #6b8e23; 
+    color:  #fcfbf9;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+/* .btn-nav:hover {
+    color:#4b3621;
+    background-color:#f7fdf7;
+} */
 /* estilizaçao da section home */
 
 .home {
     display:flex;
     align-items:center;
     box-shadow: 5px 10px 5px #caebb7;
-    height: 500px;
+    height: auto;
     scroll-margin-top: 230px;
-    background-image: linear-gradient(rgba(202, 235, 183, 0.8), rgba(202, 235, 183, 0.8)),
-                        url("https://static.vecteezy.com/system/resources/thumbnails/037/747/925/small/ai-generated-falling-coffee-beans-free-png.png");
+    background-color:var(--verde_matcha);
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/037/747/925/small/ai-generated-falling-coffee-beans-free-png.png");
     background-size:contain;
     background-repeat:no-repeat;
     background-blend-mode:darken;
@@ -100,7 +113,8 @@ body {
     /* text-shadow: 3px 1px 0px rgb(120, 121, 114); */
     display: table;
     font-size: 52px;
-    padding: 10px 10px; background-color: #fdfbf7;
+    padding: 10px 10px;
+    background-color: #fdfbf7;
     margin: 10px;
     text-align: center;
 }
@@ -116,25 +130,24 @@ body {
     text-align: center;
 }
     
-p {
+/* p {
     font-size: 16px;
     margin: 10px;
-}
+} */
 
 .home-img img {
     display: flex;
     margin: auto;
-    height:500px;
-    width: 900px;
+    height:auto;
+    width: 100%;
     /* border:0px; */
 }
 
 /* section para falar um pouco do lugar(hub) */
 .hub {
     background-color: #fdfbf7;
-    box-shadow: 5px 10px 30px #886b5d80;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 
@@ -142,12 +155,12 @@ p {
     position:absolute;
     z-index:1;
     right:0px;
-    top:30rem    
+    top:35rem    
 }
 .hub .splashy img {
     width: 1900px;
     height:auto;
-    display:flex;
+    display:block;
     mix-blend-mode:darken;
 }
 
@@ -182,6 +195,8 @@ p {
     margin: 10px;
     bottom: -30px;
     z-index:2;
+    position:relative;
+    text-align:center;
 }
 
 
@@ -192,7 +207,7 @@ p {
     padding-bottom:100px;
     text-align: center;
     scroll-margin-top: 230px;
-    
+    background-color:var(--verde_matcha);
 }
 
 .menu-grid {
@@ -227,10 +242,10 @@ p {
     width:100%;
 }
  
-h2 {
+/* h2 {
     position:relative;
     text-align:center;
-}
+} */
 
 /* section para falar um pouco da história do café */
 
@@ -309,6 +324,7 @@ h2 {
     padding-top: 30px;
     padding-bottom:30px;
     text-align: center;
+    background:var(--verde_matcha)
 }
 
 .exp {
@@ -348,7 +364,7 @@ h2 {
     gap:70px;
     margin: 10px auto;
     max-width: 100%;
-    flex: 1 1 200px;
+    /* flex: 1 1 200px; */
 }
 
 .stat-item {
@@ -370,7 +386,7 @@ h2 {
     text-align: center;
     align-self: center;
     object-fit: scale-down;
-    display: flex;
+    display: block;
     transition: transform 0.4s ease;
 }
 
@@ -395,10 +411,12 @@ h2 {
 
 .shop {
     padding-top: 100px;
-    padding-bottom:100px;
+    padding-bottom:150px;
+    border:50px solid #4b3621;
+    border-radius:100px;
     text-align: center;
-    scroll-margin-top: 150px;
-    background-color: var(--branco_leve);
+    scroll-margin-bottom: 100px;
+    background-color: #F1E9D7;
     
 }
 
@@ -422,8 +440,22 @@ h2 {
     transition: transform 0.4s ease;
 }
 
-.shop-item:hover {
-    transform: translateY(-10px);
+.shop-item h2 {
+    padding:15px;
+}
+
+.btn-shop {
+    background-color: #6b8e23; 
+    color:  #fcfbf9;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.btn-shop:hover {
+    color:#f7fdf7;
+    background-color:#4b3621;
 }
 
 .shop-img img {
@@ -433,11 +465,13 @@ h2 {
     display:block;
     width:100%;
 }
+
+
  
-h2 {
+/* h2 {
     position:relative;
     text-align:center;
-}
+} */
 
 
 /* footer pra informaçoes adicionais */
